@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/superhero/bootstrap.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="Default.aspx">Forside</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="Default.aspx">Forside</a></li>
+                    <li><a href="Brugerside.aspx">Brugerside</a></li>
+                    <li><a href="Oprethold.aspx">Opret hold</a></li>
+                    <li><a href="Login.aspx">Login</a></li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <div class="container-fluid">
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
